@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="titulos">
+    <h6>Numero 1</h6>
+    <h6>Numero 2</h6>
+  </div>
+  <div class="inputs">
+    <input type="number" [(ngModel)]="numero1" />
+    <input type="number" [(ngModel)]="numero2" />
+  </div>
+
+  <div class="botones">
+    <button (click)="sumar()">Sumar</button>
+    <button (click)="restar()">Restar</button>
+    <button (click)="multiplicar()">Multiplicar</button>
+    <button (click)="dividir()">Dividir</button>
+  </div>
+  <p class="tituloP">Resultado</p>
+  <p class="resultado">{{ resultado }}</p>
+</div>
